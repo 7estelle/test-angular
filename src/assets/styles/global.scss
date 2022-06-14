@@ -3,19 +3,16 @@
 }
 
 body {
-    background-color: #161616;
     margin: 0 auto;
 }
 
 h1, h2, h3 {
     font-family: 'Acrelec', sans-serif;
-    color: #fff;
 }
 
 p {
     font-family: 'Roboto-Regular', sans-serif;
     font-size: rem-calc(16px);
-    color: #fff;
 }
 
 
@@ -24,4 +21,9 @@ p {
     padding: rem-calc(24px);
     max-width: 600px;
     width: 100%;
+}
+
+.icon {
+    height: 60px;
+    padding: 10px;
 }

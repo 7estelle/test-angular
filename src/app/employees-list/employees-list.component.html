@@ -5,10 +5,8 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     </header>
     <h2>Employees List</h2>
-    <ul>
-      <li class="list" *ngFor="let employee of employees">
-        <h3>{{ employee.FirstName }} {{ employee.SecondName }}</h3>
-      </li>
+    <ul class="employee-list">
+      <app-employee></app-employee>
     </ul>
   </main>
 </div>
