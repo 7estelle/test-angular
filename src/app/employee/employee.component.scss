@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid #000;
+    margin: 10px 0;
+    border: 1px solid #000;
     border-radius: 6px;
 
     &:last-child{
@@ -22,13 +23,32 @@
             flex-direction: row;
         }
 
-        button {
+        .control-btn {
             width: 60px;
             height: 60px;
+            margin: 10px;
             display: flex;
             align-items: center;
             justify-items: center;
             padding: 0;
+            border-radius: 100%;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &--delete {
+                background-color: #d66262;
+            }
+            
+            &--edit {
+                background-color: #83c08a;
+            }
+            &:disabled {
+                opacity: 0.3;
+                cursor: auto;
+            }
         }
         
     }

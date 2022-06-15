@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+
+$primary: #8cd6b5;
+$primary-light: #f0fff8;
+$primary-medium: #94ccb3;
+$primary-dark: #288e60;
+
 body {
     margin: 0 auto;
     font-family: 'Roboto-Regular', sans-serif;
@@ -11,6 +17,11 @@ body {
 h1, h2 {
     font-family: 'Acrelec', sans-serif;
 }
+
+h3 {
+    color: $primary-dark;
+}
+
 
 .container {
     margin: 0 auto;

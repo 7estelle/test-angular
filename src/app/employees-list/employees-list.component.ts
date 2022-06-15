@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import employeesData from '../../assets/data/employees.json';
+import { FormsModule } from '@angular/forms';
  
 interface Employee {  
   FirstName: String;  
@@ -18,4 +19,10 @@ interface Employee {
 export class EmployeesListComponent {
   employees = employeesData;
   inputText = this.employees;
+
+  searchText: string = '';
+  onSearchTextEntered(searchValue: string){
+    this.searchText = searchValue;
+    console.log(this.searchText);
+  }
 }

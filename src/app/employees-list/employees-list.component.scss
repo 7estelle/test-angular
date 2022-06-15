@@ -1,14 +1,20 @@
 @import '../../styles.scss';
 
 main {
-    border: 1px solid;
     border-radius: 6px;
-    background-color: #d0d0f5;
+    box-shadow: 0 0px 20px #c5e9d9;
+    background: transparent;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
     padding: 24px;
+    background-color: #e4ede9;
 }
 
 .company {
-    background-color: #3b3bf9;
+    background-color: $primary;
+    border-radius: 4px;
+    padding: rem-calc(16px);
 }
 
 .employee-list {

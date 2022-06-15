@@ -5,9 +5,10 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     </header>
     <h2>Employees List</h2>
+    <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
     <ul class="employee-list">
       <li *ngFor="let employee of employees; let i = index" [attr.data-index]="i">
-      <app-employee [inputFromParent] = "inputText" [index]="i"></app-employee>
+      <app-employee [inputFromParent] = "inputText" [index]="i"  *ngIf="searchText === '' || inputText[i].FirstName.toLowerCase().includes(searchText)"></app-employee>
     </li>
     </ul>
   </main>
