@@ -6,7 +6,9 @@
     </header>
     <h2>Employees List</h2>
     <ul class="employee-list">
-      <app-employee></app-employee>
+      <li *ngFor="let employee of employees; let i = index" [attr.data-index]="i">
+      <app-employee [inputFromParent] = "inputText" [index]="i"></app-employee>
+    </li>
     </ul>
   </main>
 </div>

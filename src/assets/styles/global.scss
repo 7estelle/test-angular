@@ -4,17 +4,13 @@
 
 body {
     margin: 0 auto;
-}
-
-h1, h2, h3 {
-    font-family: 'Acrelec', sans-serif;
-}
-
-p {
     font-family: 'Roboto-Regular', sans-serif;
     font-size: rem-calc(16px);
 }
 
+h1, h2 {
+    font-family: 'Acrelec', sans-serif;
+}
 
 .container {
     margin: 0 auto;

@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid #000;
+    border-radius: 6px;
 
     &:last-child{
         border-bottom: 1px solid #000;
@@ -11,5 +12,24 @@
     &__id {
         display: flex;
         align-items: center;
+    }
+
+    .emp__control {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and(min-width: 480px) {
+            flex-direction: row;
+        }
+
+        button {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            padding: 0;
+        }
+        
     }
 }

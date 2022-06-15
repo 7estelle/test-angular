@@ -1,13 +1,20 @@
-<li class="emp" *ngFor="let employee of employees">
+<div class="emp">
   <div class="emp__id">
     <img src="../../assets/images/user.png" class="icon pp" alt="">
     <div class="emp__content">
-    <h3 class="name">{{ employee.FirstName }} {{ employee.SecondName }}</h3>
-    <p>{{ employee.Position }}</p>
+      <h3 class="name">{{ inputFromParent[index].FirstName }} {{ inputFromParent[index].SecondName }}</h3>
+      <p>{{ inputFromParent[index].Position }}</p>
     </div>
-    </div>
-    <div class="emp__control">
-      <img src="../../assets/images/delete-user.png" class="icon" alt="">
-      <img src="../../assets/images/edit-user.png" class="icon" alt="">
   </div>
-</li>
+  <div class="emp__control">
+    <button class="emp__control__delete">
+      <img src="../../assets/images/delete-user.png" class="icon" alt="">
+    </button>
+    <button class="emp__control__edit" *ngIf="inputFromParent[index].Blocked==true" disabled>
+      <img src="../../assets/images/edit-user.png" class="icon" alt="">
+    </button>
+    <button class="emp__control__edit" *ngIf="inputFromParent[index].Blocked==false">
+      <img src="../../assets/images/edit-user.png" class="icon" alt="">
+    </button>
+  </div>
+</div>
