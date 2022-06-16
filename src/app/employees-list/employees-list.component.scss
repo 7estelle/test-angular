@@ -2,19 +2,20 @@
 
 main {
     border-radius: 6px;
-    box-shadow: 0 0px 20px #c5e9d9;
+    box-shadow: 0 0px 20px #aaaaaa;
     background: transparent;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     border-radius: 15px;
     padding: 24px;
-    background-color: #e4ede9;
+    background-color:transparent;
 }
 
 .company {
-    background-color: $primary;
+    // background-color: $primary-medium;
     border-radius: 4px;
     padding: rem-calc(16px);
+    text-align: center;
 }
 
 .employee-list {

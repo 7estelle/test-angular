@@ -3,34 +3,38 @@
 }
 
 
-$primary: #8cd6b5;
+$primary: #cc8512;
 $primary-light: #f0fff8;
-$primary-medium: #94ccb3;
-$primary-dark: #288e60;
+$primary-medium: #d1ae77;
+$primary-dark: #65430c;
 
 body {
     margin: 0 auto;
     font-family: 'Roboto-Regular', sans-serif;
     font-size: rem-calc(16px);
+    background-image: url(../../assets/images/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1, h2 {
     font-family: 'Acrelec', sans-serif;
+    color: $primary;
 }
 
 h3 {
-    color: $primary-dark;
+    color: $primary;
 }
 
 
 .container {
     margin: 0 auto;
-    padding: rem-calc(24px);
+    padding: rem-calc(36px) rem-calc(24px);
     max-width: 600px;
     width: 100%;
 }
 
 .icon {
-    height: 60px;
+    height: 50px;
     padding: 10px;
 }

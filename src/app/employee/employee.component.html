@@ -1,20 +1,20 @@
 <div class="emp">
   <div class="emp__id">
-    <img src="../../assets/images/user.png" class="icon pp" alt="">
+    <img src="../../assets/images/user.png" class="pp" alt="">
     <div class="emp__content">
       <h3 class="name">{{ inputFromParent[index].FirstName }} {{ inputFromParent[index].SecondName }}</h3>
       <p>{{ inputFromParent[index].Position }}</p>
     </div>
   </div>
   <div class="emp__control">
-    <button class="control-btn control-btn--delete">
-      <img src="../../assets/images/delete-user.png" class="icon" alt="">
+    <button class="control-btn control-btn--edit" *ngIf="inputFromParent[index].Blocked==false">
+      <img src="../../assets/images/edit-user.png" class="icon" alt="">
     </button>
     <button class="control-btn control-btn--edit" *ngIf="inputFromParent[index].Blocked==true" disabled>
       <img src="../../assets/images/edit-user.png" class="icon" alt="">
     </button>
-    <button class="control-btn control-btn--edit" *ngIf="inputFromParent[index].Blocked==false">
-      <img src="../../assets/images/edit-user.png" class="icon" alt="">
+    <button class="control-btn control-btn--delete">
+      <img src="../../assets/images/delete-user.png" class="icon" alt="">
     </button>
   </div>
 </div>
