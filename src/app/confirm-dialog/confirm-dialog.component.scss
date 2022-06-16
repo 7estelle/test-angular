@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+.dialog {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 0.5px solid $red;
+    padding: 16px;
+    max-width: 460px;
+    margin: auto;
+
+    &__control {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

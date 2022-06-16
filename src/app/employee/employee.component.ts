@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import employeesData from '../../assets/data/employees.json';
  
 interface Employee {  
   FirstName: String;  
@@ -19,6 +18,10 @@ interface Employee {
 export class EmployeeComponent {
   @Input() inputFromParent : Array<Employee>;
   @Input() index: number;
-  constructor() { }
 
+  showVar: boolean = false;
+
+  toggleChild(){
+      this.showVar = !this.showVar;
+  }
 }

@@ -35,7 +35,7 @@
         margin: 0;
     }
 
-    .control-btn {
+    .emp-btn {
         width: 50px;
         height: 50px;
         margin: 10px;
@@ -50,21 +50,6 @@
             cursor: pointer;
         }
 
-        &--delete {
-            background-color: #d47f7f;
-            transition: all 0.2s ease;
-            &:hover{
-                background-color: #f19494;
-            }
-        }
-        
-        &--edit {
-            background-color: $primary;
-            transition: all 0.2s ease;
-            &:hover{
-                background-color: $primary-light;
-            }
-        }
         &:disabled {
             opacity: 0.3;
             cursor: auto;

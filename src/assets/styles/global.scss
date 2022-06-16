@@ -1,41 +1,87 @@
-*, *::after, *::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 
-$primary: #41d575;
-$primary-light: #77d6aa;
-$primary-medium: #409b60;
-$primary-dark: #10652e;
+$primary: #4170d5;
+$primary-light: #7a9de8;
+$primary-medium: #5a81d4;
+$primary-dark: #133378;
+$neutral: #eaeaea;
+$red: #d47f7f;
+$red-light: #f19494;
 
 body {
-    margin: 0 auto;
-    font-family: 'Roboto-Regular', sans-serif;
-    font-size: rem-calc(16px);
-    background-image: url(../../assets/images/background.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+  margin: 0 auto;
+  font-family: 'Roboto-Regular', sans-serif;
+  font-size: rem-calc(16px);
+  background-image: url(../../assets/images/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-h1, h2 {
-    font-family: 'Acrelec', sans-serif;
-    color: $primary-medium;
+h1,
+h2 {
+  font-family: 'Acrelec', sans-serif;
+  color: $primary-medium;
 }
 
 h3 {
-    color: $primary-medium;
+  color: $primary;
 }
 
 
 .container {
-    margin: 0 auto;
-    padding: rem-calc(36px) rem-calc(24px);
-    max-width: 600px;
-    width: 100%;
+  margin: 0 auto;
+  padding: rem-calc(36px) rem-calc(24px);
+  max-width: 600px;
+  width: 100%;
 }
 
 .icon {
-    height: 50px;
-    padding: 10px;
+  height: 50px;
+  padding: 10px;
+}
+
+.btn {
+  padding: rem-calc(6px) rem-calc(16px);
+  margin: 0 rem-calc(10px);
+  border-radius: 4px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary {
+    background-color: $primary-medium;
+    transition: all 0.2s ease;
+
+    &:hover:enabled {
+      background-color: $primary-light;
+    }
+  }
+
+  &--neutral {
+    background-color: $neutral;
+    transition: all 0.2s ease;
+    border: 1px solid $primary-light;
+
+    &:hover:enabled {
+      background-color: $primary-light;
+    }
+  }
+
+  &--delete {
+    background-color: $red;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $red-light;
+    }
+  }
 }

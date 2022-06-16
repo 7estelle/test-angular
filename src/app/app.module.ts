@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { EmployeesListComponent } from './employees-list/employees-list.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { SearchComponent } from './search/search.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeesListComponent,
     EmployeeComponent,
-    SearchComponent
+    SearchComponent,
+    ConfirmDialogComponent
   ],
   imports: [
     BrowserModule,
