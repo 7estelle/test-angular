@@ -3,10 +3,10 @@
 }
 
 
-$primary: #cc8512;
-$primary-light: #f0fff8;
-$primary-medium: #d1ae77;
-$primary-dark: #65430c;
+$primary: #41d575;
+$primary-light: #77d6aa;
+$primary-medium: #409b60;
+$primary-dark: #10652e;
 
 body {
     margin: 0 auto;
@@ -15,15 +15,16 @@ body {
     background-image: url(../../assets/images/background.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 h1, h2 {
     font-family: 'Acrelec', sans-serif;
-    color: $primary;
+    color: $primary-medium;
 }
 
 h3 {
-    color: $primary;
+    color: $primary-medium;
 }
 
 
